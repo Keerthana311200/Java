@@ -1,0 +1,25 @@
+class Finding4
+{
+    void add(int a, float b)
+    {
+        a = 1;
+        b = 2.0f;
+        float c = a + b;
+        System.out.println("this is add(int a, float b) method: " + c);
+    }
+
+    void add(float a, int b)
+    {
+        a = 2.0f;
+        b = 4;
+        float c = a + b;
+        System.out.println("this is add(float a, int b) method: " + c);
+    }
+
+    public static void main(String ar[])
+    {
+        Finding4 f1 = new Finding4();
+        f1.add(3, 5.0f); // Calls the add(int, float) method
+        f1.add(3.0f, 5); // Calls the add(float, int) method
+    }
+}
