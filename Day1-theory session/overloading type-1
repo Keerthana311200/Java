@@ -1,0 +1,22 @@
+class Finding2
+{
+void add(int a, int b)
+{
+a=1;b=2;
+int c=a+b;
+System.out.println("this is add(inta, intb)method:"+c);
+}
+
+void add (int a, int b, int c)
+{
+a=2;b=4;c=6;
+int d=a+b+c;
+System.out.println("this is add(inta, intb, int c)method:"+d);
+}
+public static void main(String ar[])
+{
+Finding2 f1= new Finding2();
+f1.add(3,5);
+f1.add(3,5,4);
+}
+}
